@@ -1,12 +1,16 @@
 def arithmetic_arranger(problems, show_answers=False):
+    
+    # If there are more than 5 problems, then an error will be returned. Max 5 only! 
     if len(problems) > 5:
         return 'Error: Too many problems.'
     
+    # Declaring variables for the problems
     first_operands = []
     second_operands = []
     operators = []
     answers = []
-    
+
+    # Assigning problem to variables to capture their value
     for problem in problems:
         parts = problem.split()
         first_operand = parts[0]
